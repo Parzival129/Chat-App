@@ -56,13 +56,36 @@
     #message-input {
       flex-grow: 1;
     }
+
+    .send-button {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.send-button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
   </style>
 </head>
 <body>
   <div id="message-container"></div>
   <form id="send-container">
     <input class="send-input" type="text" id="message-input">
-    <button type="submit" id="send-button">Send</button>
+    <button class="send-button" type="submit" id="send-button">Send</button>
   </form>
 </body>
 </html>
